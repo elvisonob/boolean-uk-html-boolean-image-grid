@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project2 {
+    display: grid;
+    grid-template: "header header header" 80px "left-menu main right-menu" 1fr "footer footer footer" 80px / 200px 1fr 200px;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: navy;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: whitesmoke;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: whitesmoke;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: navy;
+}
+
+.project2 .main {
+    display: grid;
+    grid-template-rows: autofit minmax(200px, 1fr);
+    padding: 50px;
+    gap: 10px;
+    width: 100%;
+}
+
+.main .image,
+.main .texts {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main .image {
+    display: grid;
+    grid-template-rows: 1fr 50px 100px;
+}
+
+.image .laptop,
+.image .small-icon,
+.image .twitter,
+.image .texts {
+    border: 1px solid white;
+}
+
+.image .small-icon {
+    display: grid;
+    grid-template-columns: 1fr 30px 30px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.texts {
+    padding: 20px;
+}
+
+p {
+    margin-top: 40px;
+    color: blue;
+    font-weight: bolder;
+}
+
+.fresh {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.laptop {
+    position: relative;
+}
+
+.header li {
+    display: inline;
+}
+
+.header nav {
+    display: inline;
+}
+
+.header ul {
+    display: inline;
+}
+
+.header ul li a {
+    display: inline;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: right;
+    padding: 5px;
+}
+
+.header a {
+    /* border: 1px solid black; */
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    /* background-color: greenyellow; */
+    text-decoration: none;
+    color: white;
+}

@@ -6,13 +6,18 @@
 
 .image-grid {
     display: grid;
-    grid-template: "header header header" 50px "left-menu main right-menu" 1fr "footer footer footer" 50px / 200px 1fr 200px;
+    grid-template: "header header header" 50px "hero    hero   hero" 500px "left-menu main right-menu" 1fr "footer footer footer" 50px / 200px 1fr 200px;
     height: 100vh;
 }
 
 .header {
     grid-area: header;
     background-color: navy;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: red;
 }
 
 .left-menu {
@@ -47,7 +52,6 @@
 .image-grid .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* height: 100vh; */
     padding: 10px;
     grid-gap: 10px;
 }
@@ -65,7 +69,7 @@
 .box .laptop,
 .box .small-icon,
 .box .text {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .box .small-icon {
@@ -78,7 +82,7 @@
 .small-icon .empty,
 .small-icon .teddy,
 .small-icon .twitter {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .text {
