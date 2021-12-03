@@ -6,13 +6,16 @@
 
 .project2 {
     display: grid;
-    grid-template: "header header header" 80px "left-menu main right-menu" 1fr "footer footer footer" 80px / 200px 1fr 200px;
+    grid-template: "header header header" 85px "left-menu main right-menu" 1fr "footer footer footer" 80px / 200px 1fr 200px;
     height: 100vh;
 }
 
 .header {
     grid-area: header;
     background-color: navy;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .left-menu {
