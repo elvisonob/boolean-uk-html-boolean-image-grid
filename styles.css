@@ -6,8 +6,8 @@
 
 .image-grid {
     display: grid;
-    grid-template: "header header header" 50px "hero    hero   hero" 500px "left-menu main right-menu" 1fr "footer footer footer" 50px / 200px 1fr 200px;
-    height: 100vh;
+    grid-template: "header" 50px " main" 1fr "footer" 50px;
+    width: 100%;
 }
 
 .header {
@@ -21,6 +21,13 @@
 .hero {
     grid-area: hero;
     background-color: red;
+    height: 100vh;
+    background-image: url("assets/images/hero.jpg");
+    background-repeat: no-repeat;
+}
+
+.hero img {
+    width: 100%;
 }
 
 .left-menu {
@@ -52,11 +59,13 @@
     /* border: 1px solid yellow; */
 }
 
-.image-grid .main {
+.cardgrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
     grid-gap: 10px;
+    padding-left: 12em;
+    padding-right: 12em;
 }
 
 .main .box {
