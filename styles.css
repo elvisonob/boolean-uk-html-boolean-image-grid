@@ -103,3 +103,7 @@
 .laptop {
     position: relative;
 }
+
+.third2 {
+    border-radius: 10px 10px 0px 0px;
+}
