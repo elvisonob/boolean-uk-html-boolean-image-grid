@@ -46,7 +46,7 @@
 .main .image,
 .main .texts {
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .main .image {
@@ -123,4 +123,8 @@ p {
     /* background-color: greenyellow; */
     text-decoration: none;
     color: white;
+}
+
+.port {
+    border-radius: 10px 10px 0px 0px;
 }

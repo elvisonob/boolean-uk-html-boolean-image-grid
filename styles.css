@@ -13,6 +13,9 @@
 .header {
     grid-area: header;
     background-color: navy;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .hero {
