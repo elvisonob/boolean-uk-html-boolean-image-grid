@@ -25,7 +25,7 @@
 
 .left-menu {
     grid-area: left-menu;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .main {
@@ -34,7 +34,7 @@
 
 .right-menu {
     grid-area: right-menu;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .footer {
